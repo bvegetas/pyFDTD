@@ -10,7 +10,7 @@ Created on Thu Nov 28 01:11:40 2019
 # -*- coding: utf-8 -*-
 """
 Created on Sun Jul 21 23:12:48 2019
-Paket program Anti-Retlatijum: deteksi mencuri USB flash drive
+Paket program Anti-Mata-Mata: deteksi mencuri USB flash drive
 Memindai jika semua flash drive di Linux dihapus secara paksa,
 Jika dihapus secara paksa, catat waktu penghapusan dan nama flash drive,
 dan gunakan perangkat kamera untuk menemukan 
@@ -57,22 +57,22 @@ while True:
             a=os.listdir('/media/'+username+'/'+i)       
             if len(a)==0:
                 banner+=1
-                attacks.append(x+', Flash drive \"'+i+'\" dicuri oleh Retlatijum')
+                attacks.append(x+', Flash drive \"'+i+'\" dicuri oleh Mata-Mata')
                 disklist1.remove(i)
         except:
             banner+=1
-            attacks.append(x+', Flash drive \"'+i+'\" dicuri oleh Retlatijum')
+            attacks.append(x+', Flash drive \"'+i+'\" dicuri oleh Mata-Mata')
             disklist1.remove(i)
     for i in disklist2:
         try:
             a=os.listdir('/mnt/'+i)       
             if len(a)==0:
                 banner+=1
-                attacks.append(x+', Flash drive \"'+i+'\" dicuri oleh Retlatijum')
+                attacks.append(x+', Flash drive \"'+i+'\" dicuri oleh Mata-Mata')
                 disklist2.remove(i)
         except:
             banner+=1
-            attacks.append(x+', Flash drive \"'+i+'\" dicuri oleh Retlatijum')
+            attacks.append(x+', Flash drive \"'+i+'\" dicuri oleh Mata-Mata')
             disklist2.remove(i)
     detected+=banner
     print('Pada '+x+', %d pencurian flash drive terdeteksi'%detected)
