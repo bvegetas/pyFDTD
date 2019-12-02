@@ -47,10 +47,7 @@ for i in disklist2:
 detected=0
 while True:
     banner=0
-    w=time.localtime()
-    '''
-    Republik Tiongkok Tahun = Kalender Barat Tahun-1911
-    '''
+    w=time.localtime() 
     x=str(w[2])+'/'+str(w[1])+'/'+str(w[0])+', '+str(w[3])+':'+str(w[4])+':'+str(w[5])
     for i in disklist1:
         try:
